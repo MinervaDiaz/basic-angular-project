@@ -8,9 +8,12 @@ import Swal from 'sweetalert2';
 })
 export class ChoferservicsService {
   public listadechoferes: any[];
+  //agregamos esto para editar un chofer
+  public chofer:any;
 
   constructor(private http: HttpClient, private router: Router) {
-    this.listadechoferes = [];
+    this.listadechoferes = []
+    this.chofer= {}
   }
   Getchoferes(): void {
     //consumo de API MVC en angular
@@ -57,5 +60,13 @@ export class ChoferservicsService {
       this.router.navigate(['/ListarChoferes']);}
     });
     //nos suscribimos a la respuesta
+  }
+
+  //nuevo method para editar chofer
+  choferbyID(id:number){
+    this.http.get("http://localhost:57239/API/ChoferesAPI/GetById/"+id).subscribe((respuesta:any)=>{
+      console.log(respuesta)
+      this.chofer = respuesta
+    });
   }
 }
