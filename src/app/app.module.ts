@@ -7,12 +7,14 @@ import { ListarChoferesComponent } from './ListarChoferes/listar-choferes/listar
 import { AgregarChoferComponent } from './agregarChofer/agregar-chofer/agregar-chofer.component';
 import {HttpClientModule} from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { DetallesChoferComponent } from './detalles-chofer/detalles-chofer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListarChoferesComponent,
-    AgregarChoferComponent
+    AgregarChoferComponent,
+    DetallesChoferComponent
   ],
   imports: [
     BrowserModule,

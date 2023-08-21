@@ -10,7 +10,7 @@
           <div class="card-body">
             <h5 class="card-title">{{ch.nombre+" "}}{{ch.apellido_Paterno+" "}}{{ch.apellido_Materno}}</h5>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Más info</a>
+            <a [routerLink]="['/DetalleChofer', ch.id_chofer]" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
       </div>
