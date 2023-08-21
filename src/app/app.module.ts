@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ListarChoferesComponent } from './ListarChoferes/listar-choferes/listar-choferes.component';
 import { AgregarChoferComponent } from './agregarChofer/agregar-chofer/agregar-chofer.component';
 import {HttpClientModule} from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
