@@ -40,15 +40,15 @@
       <br>
       <div class="form-group col-md-2">
         <label class="fw-bold">urlForo</label>
-        <input type="file" name="" id="" class="form-control" #foto>
+        <input type="file" name="" id="" class="form-control" #urlfoto>
       </div>
       <br>
       <div class="form-group col-md-2">
         <label class="fw-bold">Disponibilidad</label>
-        <input type="checkbox" name="" id="" class="form-control" #disp>
+        <input type="text" class="form-control" #disp>
       </div>
       <div class="form-group col-md-6" style="text-align: right;">
-        <button class="btn btn-primary">Guardar</button>
+        <button class="btn btn-primary" (click)="guardar()">Guardar</button>
       </div>
     </div>
   </div>

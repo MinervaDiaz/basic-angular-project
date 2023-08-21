@@ -4,15 +4,15 @@
 
   </div>
   <div class="row">
-      <div *ngFor="let ch of listachoferes" class="col-md-2 col-lg-3 ">
-        <div class="card" style="width: 18rem;">
-          <img src="https://www.klikanews.com/wp-content/uploads/2022/03/fc09ac_05b3d621bf6940ba985e8312ebf45956_mv2.jpg" class="card-img-top" alt="...">
+      <div *ngFor="let ch of listachoferes" class="col-md-2 col-lg-3 m-4 shadow p-4 border">
+        <img class="card mb-2" style="width: 18rem;">
+          <img src="https://pbs.twimg.com/media/DL3svVrW0AA84gz.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{ch.nombre+" "}}{{ch.apellido_Paterno+" "}}{{ch.apellido_Materno}}</h5>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-primary">Más info</a>
           </div>
         </div>
       </div>
     </div>
-</div>
+

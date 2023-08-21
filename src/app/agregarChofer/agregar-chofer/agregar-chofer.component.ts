@@ -27,8 +27,8 @@ export class AgregarChoferComponent {
    @ViewChild("lic")
   private lic!:ElementRef
 
-  @ViewChild("foto")
-  private foto!:ElementRef
+  @ViewChild("urlfoto")
+  private urlfoto!:ElementRef
 
   @ViewChild("disp")
   private disp!:ElementRef
@@ -38,7 +38,19 @@ export class AgregarChoferComponent {
 
   }
   guardar(){
-    
+    //primero modificamor el choferservice y ponemos el metodo inseratr chofer, después movemos este método
+
+    //constante de método = valor del html
+    const nombre = this.nombre.nativeElement.value;
+    const app = this.app.nativeElement.value;
+    const apm = this.apm.nativeElement.value;
+    const tel = this.tel.nativeElement.value;
+    const fnac = this.fnac.nativeElement.value;
+    const lic = this.lic.nativeElement.value;
+    const urlfoto = this.urlfoto.nativeElement.value;
+    const disp = this.disp.nativeElement.value;
+
+    this.service.InsertChofer( nombre, app, apm, tel, fnac, lic, urlfoto, disp);
   }
 
 }
