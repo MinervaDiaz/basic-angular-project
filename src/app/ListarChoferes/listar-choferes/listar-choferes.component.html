@@ -11,6 +11,8 @@
             <h5 class="card-title">{{ch.nombre+" "}}{{ch.apellido_Paterno+" "}}{{ch.apellido_Materno}}</h5>
             <p class="card-text"></p>
             <a [routerLink]="['/DetalleChofer', ch.id_chofer]" class="btn btn-primary">Ver detalles</a>
+            <a [routerLink]="['/EditarChofer', ch.id_chofer]" class="btn btn-warning">Editar</a>
+            <button class="btn btn-danger" (click)="eliminar(ch.id_chofer)">Eliminar</button>
           </div>
         </div>
       </div>

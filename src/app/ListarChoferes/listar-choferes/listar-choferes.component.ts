@@ -17,7 +17,10 @@ export class ListarChoferesComponent implements OnInit {
     service.Getchoferes();
   }
   ngOnInit(): void {
+  }
 
+  eliminar(id:number){
+    this.service.EliminarChofer(id);
   }
 
 }
